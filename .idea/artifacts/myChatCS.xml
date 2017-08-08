@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="myChatCS">
+    <output-path>$PROJECT_DIR$/out/artifacts/myChatCS</output-path>
+    <root id="archive" name="myChatCS.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="simplyChatCS" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
