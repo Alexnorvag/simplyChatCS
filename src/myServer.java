@@ -11,9 +11,13 @@ public class myServer  {
         System.out.println("Server Started");
         try {
             while (true) {
-                //blocks until there is a connection
+                //blocked until there is a connection
                 Socket socket = s.accept();
-                new ServerOne(socket);
+                try {
+                    new ServerOne(socket);
+                } catch (IOException e) {
+                    socket.close();
+                }
             }
         } finally {
             s.close();
